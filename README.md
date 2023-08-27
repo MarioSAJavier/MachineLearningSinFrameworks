@@ -1,0 +1,2 @@
+# MachineLearningSinFrameworks
+Práctica regresión logística
