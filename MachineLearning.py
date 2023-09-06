@@ -14,8 +14,8 @@ class LogisticRegression():
 
     def fit(self, X, y):                             #Ajusta el modelo y por cada n iteracion cambiando el peso y el bias para la funcion sigmoide
         nSamples, nFeatures = X.shape
-        self.weights = np.zeros(nFeatures)
-        self.bias = 0
+        self.weights = np.ones(nFeatures)
+        self.bias = 10
 
         for _ in range(self.nIterations):
             linearRegression = np.dot(X, self.weights) + self.bias
